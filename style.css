@@ -1,0 +1,288 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Exo 2', sans-serif;
+  height: 90%;
+  background: var(--bg1);
+  -webkit-background-clip: text;
+  animation: slide 10s linear infinite forwards;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100&display=swap');
+
+html{
+  --bg2: repeating-linear-gradient(-45deg, red 0%, yellow 7.14%, rgb(0,255,0) 14.28%, rgb(0,255,255) 21.4%, cyan 28.56%, blue 35.7%, magenta 42.84%, red 50%);
+            background-size: 1200vw 1200vw;
+  --bg1: repeating-linear-gradient(-45deg, red 0%, yellow 7.14%, rgb(0,255,0) 14.28%, rgb(0,255,255) 21.4%, cyan 28.56%, blue 35.7%, magenta 42.84%, red 50%);
+            background-size: 1200vw 1200vw;
+  --bg: url(https://steamuserimages-a.akamaihd.net/ugc/550931938591159225/C6693D0D9609997A3902C6122C0573099A88636E/?imw=512&imh=256&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true);
+}
+
+html[data-theme='dark']{
+  --bg: url(https://media1.tenor.com/images/14aee47e4a3ef6420ece6648f6685b2b/tenor.gif?itemid=15688443);
+}
+
+
+.container.nr1{display: none;}
+.container.nr1:hover{display: contents;}
+button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background-color: #5264AE;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  border-radius: 15px;
+}
+button:hover,.form button:active,.form button:focus {
+  background: #5264AE;
+}
+
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+  transition: all 750ms !important;
+  transition-delay: 0 !important;
+}
+
+.container{
+  height: 90%;
+  margin: 2.5% 0 0 5%;
+  width: 90%;
+  background: var(--bg);
+  padding:10px;
+  border-radius:15px;
+}
+
+h2.rainbow.nr1{
+  /* Chrome, Safari, Opera */
+ -webkit-animation: font-size 1s infinite!important;
+}
+
+
+h1, h2{
+  font-size: 70px;
+  text-align:center;
+}
+
+h1{
+  color:rgba(100, 50, 255, .8);
+  font-family: 'Exo 2', sans-serif;
+  color:#212121;
+}
+
+.rainbow {
+  font-family: 'Exo 2', sans-serif;
+  text-shadow: 2px 2px 4px #000000;
+
+  /* Chrome, Safari, Opera */
+ -webkit-animation: rainbow 5s infinite;
+
+   /* Chrome, Safari, Opera */
+  -webkit-animation: rainbow 5s infinite;
+
+  /* Internet Explorer */
+  -ms-animation: rainbow 5s infinite;
+
+  /* Standar Syntax */
+  animation: rainbow 5s infinite;
+}
+
+@keyframes slide {
+  0%{
+    background-position-x: 0%;
+  }
+  100%{
+    background-position-x: 1200vw;
+  }
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rainbow{
+  0%{color: orange;}
+  10%{color: purple;}
+	20%{color: red;}
+  30%{color: CadetBlue;}
+	40%{color: yellow;}
+  50%{color: coral;}
+	60%{color: green;}
+  70%{color: cyan;}
+  80%{color: DeepPink;}
+  90%{color: DodgerBlue;}
+	100%{color: orange;}
+}
+
+@-webkit-keyframes font-size{
+  0%{font-size: 50px; color: orange;}
+  10%{font-size: 70px; color: purple;}
+	20%{font-size: 90px; color: red;}
+  30%{font-size: 110px; color: CadetBlue;}
+	40%{font-size: 130px; color: yellow;}
+  50%{font-size: 150px color: coral;}
+	60%{font-size: 130px; color: green;}
+  70%{font-size: 110px; color: cyan;}
+  80%{font-size: 90px; color: DeepPink;}
+  90%{font-size: 70px; color: DodgerBlue;}
+	100%{font-size: 50px; color: orange;}
+}
+
+
+/* Chrome, Safari, Opera, Background */
+@-webkit-keyframes rainbow-bg{
+  0%{box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 2)}
+  10%{box-shadow: 2px 2px 30px 1px rgba(5, 200, 30, 2)}
+	20%{box-shadow: 2px 2px 60px 1px rgba(70, 20, 60, 2)}
+  30%{box-shadow: 2px 2px 90px 1px rgba(30, 0, 90, 2)}
+	40%{box-shadow: 2px 2px 120px 1px rgba(150, 0, 120, 2)}
+  50%{box-shadow: 2px 2px 140px 1px rgba(20, 0, 150, 2)}
+	60%{box-shadow: 2px 2px 120px 1px rgba(160, 0, 120, 2);}
+  70%{box-shadow: 2px 2px 90px 1px rgba(30, 0, 90, 2);}
+  80%{box-shadow: 2px 2px 60px 1px rgba(80, 0, 60, 2);}
+  90%{box-shadow: 2px 2px 30px 1px rgba(90, 0, 30, 2);}
+	100%{box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 2);}
+}
+
+/* Internet Explorer */
+@-ms-keyframes rainbow{
+   0%{color: orange;}
+  10%{color: purple;}
+	20%{color: red;}
+  30%{color: CadetBlue;}
+	40%{color: yellow;}
+  50%{color: coral;}
+	60%{color: green;}
+  70%{color: cyan;}
+  80%{color: DeepPink;}
+  90%{color: DodgerBlue;}
+	100%{color: orange;}
+}
+
+/* Standar Syntax */
+@keyframes rainbow{
+  0%{color: orange;}
+  10%{color: purple;}
+	20%{color: red;}
+  30%{color: CadetBlue;}
+	40%{color: yellow;}
+  50%{color: coral;}
+	60%{color: green;}
+  70%{color: cyan;}
+  80%{color: DeepPink;}
+  90%{color: DodgerBlue;}
+	100%{color: orange;}
+}
+
+/* Input for start */
+
+.container1 {
+  font-family: 'Exo 2', sans-serif;
+  width:600px;
+  margin:30px auto 0;
+  display:block;
+  background:#FFF;
+  padding:10px 50px 50px;
+}
+
+h2.title{font-size: 32px;text-align:center;margin-bottom:50px;}
+h2 small.title {font-size: 15px;font-weight:normal;color:#888;display:block;}
+h2.small{font-size: 20px;}
+
+
+.group 			  {
+  position:relative;
+  margin: 20px 0 45px 0;
+}
+input 				{
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:300px;
+  border:none;
+  border-bottom:1px solid #757575;
+}
+input:focus 		{ outline:none; }
+
+/* Label */
+label 				 {
+  color:#999;
+  font-size:18px!important;
+  font-weight: 900;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label 		{
+  top:-20px;
+  font-size:14px;
+  color:#5264AE;
+}
+
+/* BOTTOM BARS ================================= */
+.bar 	{ position:relative; display:block; width:300px; }
+.bar:before, .bar:after 	{
+  content:'';
+  height:2px;
+  width:0;
+  bottom:1px;
+  position:absolute;
+  background:#5264AE;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%;
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position:absolute;
+  height:60%;
+  width:100px;
+  top:25%;
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
